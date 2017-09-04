@@ -1,0 +1,18 @@
+<app-header></app-header>
+<main class="following main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <!-- <div class="following__results" ng-repeat="user in $ctrl.users | filter: { id: $ctrl.currUser.following }"> -->
+        <div class="following__results" ng-repeat="user in $ctrl.users | orderBy: '-online' | filter: $ctrl.filterUsers">
+            <h5 class="following__result-name">
+              <span ng-bind="user.firstName + ' ' + user.lastName"></span>
+              <span class="following__online-icon" ng-if="user.online">&#9679;</span>
+            </h5>
+            <button class="btn app-btn following__unfollow-btn" ng-click="$ctrl.unfollow(user);">Unfollow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

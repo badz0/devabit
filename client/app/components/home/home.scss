@@ -1,0 +1,48 @@
+.home {
+
+  &__tweet-input {
+    background-color: #EAF8FD;
+    padding: 10px 20px 40px 20px;
+    border-bottom: 1px solid #e6ecf0;
+  }
+}
+
+.tweet {
+  border-bottom: 1px solid #e6ecf0;
+  background-color: #fff;
+  padding: 10px 20px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-name {
+    font-weight: bold;
+  }
+
+  &__header-time {
+    color: #657786;
+  }
+
+  &__body {
+    @extend .tweet__header;
+  }
+
+  &__like-btn {
+    align-self: flex-end;
+    background-color: transparent;
+    color: #777;
+    padding-right: 0;
+    
+    &.liked {
+      color: #e0245e;
+    }
+
+    & .glyphicon {
+      vertical-align: text-top;
+    }
+  }
+
+}

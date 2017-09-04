@@ -1,0 +1,36 @@
+<app-header></app-header>
+<main class="home main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="home__tweet-input">
+          <form name="tweetForm" ng-submit="$ctrl.tweet(tweetForm);">
+            <div class="form-group">
+              <label for="tweetInput" class="visually-hidden">Tweet input</label>
+              <textarea class="form-control" rows="3" placeholder="What's happening?" id="tweetInput"
+              ng-model="$ctrl.tweetInput" name="tweet"></textarea>
+            </div>
+            <button type="submit" class="btn app-btn pull-right home__tweet-btn"
+            ng-disabled="!$ctrl.tweetInput">Tweet</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="home__tweet tweet" ng-repeat="tweet in $ctrl.tweets | orderBy: '-date' track by $index">
+          <div class="tweet__header">
+            <h5 class="tweet__header-name" ng-bind="tweet.authorName"></h5>
+            <span class="text-right tweet__header-time" ng-bind="tweet.date | date:'HH:mm MM.dd'"></span>
+          </div>
+          <div class="tweet__body">
+            <p  ng-bind="tweet.body"></p>
+            <button class="btn tweet__like-btn" ng-class="{'liked': tweet.likes.includes($ctrl.currentUser.id)}"
+              ng-click="$ctrl.like(tweet);">
+              <span ng-bind="tweet.likes.length" ng-if="tweet.likes.length"></span>
+              <span class="glyphicon glyphicon-heart "></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "firstName": "Mari",
+    "lastName": "Dollimore",
+    "email": "bbb@mail.com",
+    "password": "bbb",
+    "online": false,
+    "following": [1, 2]
+  },
+  {
+    "id": 1,
+    "firstName": "Dennet",
+    "lastName": "Tripcony",
+    "email": "dtripcony0@cam.ac.uk",
+    "password": "7gb0CO2WQ",
+    "online": true,
+    "following": []
+  },
+  {
+    "id": 2,
+    "firstName": "Amelita",
+    "lastName": "Hugonet",
+    "email": "ahugonet1@canalblog.com",
+    "password": "zbgRvdj",
+    "online": true,
+    "following": []
+  },
+  {
+    "id": 3,
+    "firstName": "Sharleen",
+    "lastName": "Westall",
+    "email": "swestall2@cocolog-nifty.com",
+    "password": "4fpen3",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 4,
+    "firstName": "Winnah",
+    "lastName": "Farrens",
+    "email": "wfarrens3@pcworld.com",
+    "password": "qpFwBmyq9V",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 5,
+    "firstName": "Osborne",
+    "lastName": "Fane",
+    "email": "ofane4@discuz.net",
+    "password": "sY1UaXkI3o1",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 6,
+    "firstName": "Jacenta",
+    "lastName": "Bernardi",
+    "email": "jbernardi5@hhs.gov",
+    "password": "9LpKy7l",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 7,
+    "firstName": "Kiersten",
+    "lastName": "Hanlin",
+    "email": "khanlin6@nature.com",
+    "password": "3qHBRKI",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 8,
+    "firstName": "Laverna",
+    "lastName": "McKimm",
+    "email": "lmckimm7@huffingtonpost.com",
+    "password": "LSRRalmRs54",
+    "online": false,
+    "following": []
+  },
+  {
+    "id": 9,
+    "firstName": "Nonnah",
+    "lastName": "Dmitrievski",
+    "email": "ndmitrievski8@opensource.org",
+    "password": "c82ffUyEGD",
+    "online": false,
+    "following": []
+  }
+]

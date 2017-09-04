@@ -1,0 +1,30 @@
+{
+  "0": [{
+    "authorId": 0,
+    "tweetId": "00",
+    "authorName": "Mari Dollimore",
+    "body": "Such a greate wether today!=)",
+    "date": "Sun Sep 03 2017 22:04:50 GMT+0300 (Фінляндія (літо))",
+    "likes": [0, 1, 2, 4],
+    "comments": [{
+      "authorId": 1,
+      "authorName": "Dennet Tripcony",
+      "body": "You're totally right",
+      "date": "Sun Sep 03 2017 21:04:50 GMT+0300 (Фінляндія (літо))"
+    }]
+  }],
+  "1": [{
+    "authorId": 1,
+    "tweetId": "10",
+    "authorName": " dd d d d ",
+    "body": "sssdsd",
+    "date": "Sun Sep 03 2017 20:04:50 GMT+0300 (Фінляндія (літо))",
+    "likes": [2],
+    "comments": [{
+      "authorId": 1,
+      "authorName": "Dennet Tripcony",
+      "body": "You're totally right",
+      "date": "Sun Sep 03 2017 20:04:50 GMT+0300 (Фінляндія (літо))"
+    }]
+  }]
+}

@@ -1,0 +1,53 @@
+<main class="signup centered-form">
+  <h3 class="text-center">Registration Form</h3>
+  <form name="signupForm" ng-submit="$ctrl.submit(signupForm);" novalidate 
+        ng-model-options="{
+          updateOn: 'default blur',
+          debounce: { 'default': 500, 'blur': 0 }
+        }">
+
+    <div class="form-group" ng-class="{'has-error': signupForm.firstName.$invalid && !signupForm.firstName.$pristine}">
+      <label for="f-name">First Name:</label>
+      <input type="text" class="form-control" id="f-name" placeholder="First Name" name="firstName" ng-minlength="3" required ng-model="$ctrl.firstName">
+
+      <span class="help-block" ng-messages="signupForm.firstName.$error" ng-show="!signupForm.firstName.$pristine" role="alert">
+        <span ng-message="required">Required</span>
+        <span ng-message="minlength">Min length 3</span>
+      </span>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': signupForm.lastName.$invalid && !signupForm.lastName.$pristine}">
+      <label for="l-name">Last Name:</label>
+      <input type="text" class="form-control" id="l-name" placeholder="Last Name" name="lastName" ng-minlength="3" required ng-model="$ctrl.lastName">
+      
+      <span class="help-block" ng-messages="signupForm.lastName.$error" ng-show="!signupForm.lastName.$pristine" role="alert">
+        <span ng-message="required">Required</span>
+        <span ng-message="minlength">Min length 3</span>
+      </span>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': signupForm.email.$invalid && !signupForm.email.$pristine}">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" ng-model="$ctrl.email" placeholder="Enter email" name="email" required>
+
+      <span class="help-block" ng-messages="signupForm.email.$error" ng-show="!signupForm.email.$pristine" role="alert">
+        <span ng-message="required">Required</span>
+        <span ng-message="email">Invalid email</span>
+        <span ng-message="exist">Such email already exist</span>
+      </span>
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': signupForm.password.$invalid && !signupForm.password.$pristine}">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" ng-model="$ctrl.password" placeholder="Enter password" name="password" required>
+
+      <span class="help-block" ng-messages="signupForm.password.$error" ng-show="!signupForm.password.$pristine" role="alert">
+        <span ng-message="required">Required</span>
+      </span>
+    </div>
+
+    <button type="submit" ng-disabled="signupForm.$invalid" class="btn btn-default">Submit</button>
+    <a ui-sref="login" class="btn btn-default pull-right">Back to login</button>
+      
+  </form>
+</main>

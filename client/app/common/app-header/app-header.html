@@ -1,0 +1,17 @@
+<header class="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">KindaTwitter</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li ui-sref-active="active"><a ui-sref="home" >Home</a></li>
+        <li ui-sref-active="active"><a ui-sref="following">Following</a></li>
+        <li ui-sref-active="active"><a ui-sref="search">Search</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button class="btn navbar-btn app-btn header__logout-btn" ng-click="$ctrl.logOut();"><span class="glyphicon glyphicon-log-in"></span> Log Out</button></li>
+      </ul>
+    </div>
+  </nav>
+</header>

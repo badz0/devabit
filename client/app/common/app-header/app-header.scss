@@ -1,0 +1,12 @@
+@import '../common';
+
+.header {
+  &__logout-btn {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  &__logout-btn.app-btn.btn {
+    background-color: #777;
+  }
+}

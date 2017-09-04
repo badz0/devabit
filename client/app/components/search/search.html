@@ -1,0 +1,25 @@
+<app-header></app-header>
+<main class="search main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="search__input">
+          <form name="searchForm">
+            <div class="form-group">
+              <label for="searchInput" class="visually-hidden">Search input</label>
+              <input type="text" class="form-control" rows="3" placeholder="Search" id="searchInput"
+              ng-model="$ctrl.searchInput" name="search"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="search__results" ng-repeat="user in $ctrl.users | searchFilter: $ctrl.currUser: $ctrl.searchInput">
+            <h5 class="search__result-name" ng-bind="user.firstName + ' ' + user.lastName"></h5>
+            <button class="btn app-btn search__follow-btn" ng-click="$ctrl.follow(user);">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

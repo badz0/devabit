@@ -1,0 +1,55 @@
+$primaryColor:   #1da1f2;
+
+body {
+   height: 100%;
+   font-size: 62.5%;
+}
+
+.main-content {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  @media (max-width: 767px) {
+    padding-top: 250px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.app-btn.btn {
+  color: #fff;
+  font-weight: bold;
+  background-color: #58CEF2;
+  border: transparent;
+  border-radius: 100px;
+  min-width: 70px;
+  line-height: 20px;
+}
+
+.centered-form {
+  position: absolute;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 20px;
+  background-color: white;
+
+  h3 {
+    margin: 10px 0 20px;
+  }
+}

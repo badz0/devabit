@@ -1,0 +1,23 @@
+.following {
+
+  &__results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6ecf0;
+    background-color: #fff;
+    padding: 10px 40px;
+  }
+
+  &__unfollow-btn.app-btn.btn {
+    background-color: #ac002b;
+  }
+
+  &__online-icon {
+    margin-left: 5px;
+    color: lightgreen;
+    font-size: 20px;
+    line-height: 14px;
+    vertical-align: text-top;
+  }
+}
